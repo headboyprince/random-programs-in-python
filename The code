@@ -1,0 +1,31 @@
+import random
+
+'''class of living things'''
+
+mammals = ["humans", "cat", "dog", "horse", "monkeys", "donkey", "lion"]
+bird = ["owl", "eagle", "pigeon", "cock"]
+insects = ["bettle", "roaches", "ants","flies"]
+amphibians = ["frog", "toad"]
+reptiles = ["lizard"]
+fish = ["whale", "shark", "crabs", "shrimps", "crocodile", "turtle"]
+
+#animals put into differentbucket
+ land_animals = [insects, mammals,reptiles]
+ non_land_animals = [fish, bird, amphibians]
+ 
+ #select 2 random type of list of animal from the land and non land animals
+ random_land=(random.sample(land_animals, 2))
+ random_non_land = (random.sample(non_land_animals, 2))
+ class1, class2 = random_land
+ class3, class4 = random_non_land
+ 
+ pick_animal1 = random.choice(class1)
+ pick_animal2 = random.choice(class2)
+ pick_animal3 = random.choice(class)
+ pick_animal4 = random.choice(class4)
+ 
+ GroupA = []GroupB = []GroupC = []GroupD = []GroupE = []GroupF =[]
+ 
+ GroupA.append([pick_animal1, pick_animal2, pick_animal3, pick_animal4])
+ print("GroupA")
+ print(GroupA)
